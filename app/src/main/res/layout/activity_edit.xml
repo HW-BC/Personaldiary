@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:id="@+id/EditTextEditTitle"
+            android:hint="请输入日记标题"/>
+        <Button
+            android:id="@+id/ButtonDelete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#F0F9FF"
+            android:text="删除" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="作者："
+                android:textSize="20dp"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入作者"
+                android:id="@+id/EditTextEditAuthor"/>
+            <Button
+                android:id="@+id/insert_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0D90F51D"
+                android:text="插入图片"></Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ButtonCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFF8F0"
+                android:text="取消" />
+
+            <Button
+                android:id="@+id/ButtonSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F0F7FF"
+                android:text="保存" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/EditTextEditContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:hint="请输入"
+            android:background="#8AFFFFF0"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>
